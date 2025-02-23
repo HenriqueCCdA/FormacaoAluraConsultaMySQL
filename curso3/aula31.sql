@@ -1,0 +1,13 @@
+DELIMITER $$
+
+CREATE FUNCTION RetornoConstante()
+RETURNS VARCHAR(50) DETERMINISTIC
+BEGIN
+
+RETURN 'Seja bem-vindo(a)';
+
+END$$
+
+DELIMITER ;
+
+SELECT RetornoConstante()
